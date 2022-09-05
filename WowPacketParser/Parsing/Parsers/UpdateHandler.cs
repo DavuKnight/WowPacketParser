@@ -690,7 +690,7 @@ namespace WowPacketParser.Parsing.Parsers
                 obj.UpdateFields[kvp.Key] = kvp.Value;
         }
 
-        private static MovementInfo ReadMovementUpdateBlock510(Packet packet, WowGuid guid, object index)
+        public static MovementInfo ReadMovementUpdateBlock510(Packet packet, WowGuid guid, object index)
         {
             var moveInfo = new MovementInfo();
 
